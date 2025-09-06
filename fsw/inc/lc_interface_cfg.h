@@ -145,7 +145,7 @@
  *       Raising this value will also increase the size of the
  *       Actionpoint Definition Table (ADT)
  */
-#define LC_MAX_ACTION_TEXT 32
+//bc::Moved to lc_config.xml: #define LC_MAX_ACTION_TEXT 32
 
 /**
  * \brief Maximum reverse polish (RPN) equation size

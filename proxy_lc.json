@@ -28,7 +28,9 @@
          "eds/lc.xml                 >> eds/lc.xml",
          "eds/lc_config.xml          >> eds/lc_config.xml",
          "fsw/inc/lc_interface_cfg.h >> config/default_lc_interface_cfg.h",
-         "fsw/inc/lc_msgids.h        >> config/default_lc_msgids.h"
+         "fsw/inc/lc_msgids.h        >> config/default_lc_msgids.h",
+         "fsw/tables/lc_def_adt.c    >> config/tables/lc_def_adt.c",
+         "fsw/tables/lc_def_wdt.c    >> config/tables/lc_def_wdt.c"
       ]
    },
       

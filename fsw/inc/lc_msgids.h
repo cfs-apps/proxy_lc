@@ -46,7 +46,7 @@
  */
 
 //bc #define LC_HK_TLM_MID 0x08A7 /**< \brief LC Housekeeping Telemetry */
-#define LC_HK_TLM_MID  CFE_PLATFORM_TLM_TOPICID_TO_MID(CFE_MISSION_LS_HK_TLM_TOPICID) //bc 
+#define LC_HK_TLM_MID  CFE_PLATFORM_TLM_TOPICID_TO_MID(CFE_MISSION_LC_HK_TLM_TOPICID) //bc 
 
 /**\}*/
 
