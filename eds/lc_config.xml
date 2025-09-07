@@ -28,6 +28,7 @@
     <Define name="MAX_ACTIONPOINTS"  value="176" shortDescription="Moved from lc_interface_cfg.h" />
     <Define name="MAX_WATCHPOINTS"   value="176" shortDescription="Moved from lc_interface_cfg.h" />
     <Define name="MAX_RPN_EQU_SIZE"  value="20"  shortDescription="Moved from lc_interface_cfg.h" />
+    <Define name="MAX_ACTION_TEXT"   value="32"  shortDescription="Moved from lc_interface_cfg.h" />
   </Package>
 
 </DesignParameters>

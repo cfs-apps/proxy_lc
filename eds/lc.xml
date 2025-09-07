@@ -196,6 +196,9 @@
           <IntegerDataEncoding sizeInBits="16" encoding="unsigned" />
       </EnumeratedDataType>
 
+<!--bc
+Created C code that wouldn't compile. LC_MultiType_t was defined to a non-existent structure.
+
       <ContainerDataType name="MultiType" shortDescription="base type for value buffer (empty)" />
 
       <ContainerDataType name="MultiType_Unsigned32" baseType="MultiType">
@@ -240,7 +243,7 @@
         </EntryList>
       </ContainerDataType>
 
-
+-->
 <!-- Other MultiType Options
     uint8  RawByte[4]; -->
 
@@ -408,7 +411,7 @@
         </EntryList>
       </ContainerDataType>
 
-      <StringDataType name="EventText" length="50" />
+      <StringDataType name="EventText" length="${LC/MAX_ACTION_TEXT}" />
 
       <ArrayDataType name="RPNArray" dataTypeRef="RPN">
         <DimensionList>
@@ -438,7 +441,10 @@
           <Entry name="MessageID" type="CFE_SB/MsgId" shortDescription="Message ID for the message containing the watchpoint" />
           <Entry name="WatchpointOffset" type="BASE_TYPES/uint32" shortDescription="Byte offset from the beginning of the message (including any headers) to the watchpoint " />
           <Entry name="BitMask" type="BASE_TYPES/uint32" shortDescription="Byte offset from the beginning of the message (including any headers) to the watchpoint " />
+          <!--bc
           <Entry name="ComparisonValue" type="MultiType" shortDescription="Value to be masked with watchpoint data prior to comparison" />
+          -->
+          <Entry name="ComparisonValue" type="BASE_TYPES/uint32" shortDescription="Value to be masked with watchpoint data prior to comparison" />
           <Entry name="ResultAgeWhenStale" type="BASE_TYPES/uint32" shortDescription="Number of LC Sample Actionpoint commands that must be processed after comparison before result goes stale" />
           <Entry name="CustomFuncArgument" type="BASE_TYPES/uint32" shortDescription="Data passed to the custom function  when Operator_ID is set to #LC_OPER_CUSTOM" />
         </EntryList>
