@@ -1,14 +1,14 @@
 { "app": {
    
    "title": "Limit Checker App",
-   "version": "3.1.0",
-   "bc-app-spec": "bc-app-spec-v3.1",
+   "version": "4.0",
+   "bc-app-spec": "bc-app-spec-v4.0",
    "supplier": "Open STEMware",
    "copyright": "bitValence",
    "url": "https://github.com/cfs-apps/proxy_lc",
 
    "description": [
-      "This is Basecamp proxy for NASA's Limit Checker App. This repo augments",
+      "This is a Basecamp proxy for NASA's Limit Checker App. This repo augments",
       "the LC App repo so LC can be integrated with Basecamp. The 'cfs' and",
       "'requires' JSON objects are populated in lc.json"
    ],
@@ -22,16 +22,9 @@
    
    "proxy": {
       "url": "https://github.com/nasa/lc",
-      "release-tag": "equuleus-rc1",
+      "release-tag": "v7.0.1",
       "update-files": [
-         "lc.json                    >> lc.json",
-         "CMakeLists.txt             >> CMakeLists.txt",
-         "eds/lc.xml                 >> eds/lc.xml",
-         "eds/lc_config.xml          >> eds/lc_config.xml",
-         "fsw/inc/lc_interface_cfg.h >> config/default_lc_interface_cfg.h",
-         "fsw/inc/lc_msgids.h        >> config/default_lc_msgids.h",
-         "fsw/tables/lc_def_adt.c    >> config/tables/lc_def_adt.c",
-         "fsw/tables/lc_def_wdt.c    >> config/tables/lc_def_wdt.c"
+         "lc.json >> lc.json"
       ]
    },
       
@@ -39,7 +32,15 @@
       "cfe-type": "CFE_PROXY"
    },
    
-   "requires": []
+   "requires": [],
+
+   "support-files": { 
+      "cmd-sender":  "",
+      "file-server": "",
+      "scripts":     "",
+      "templates":   "",
+      "tutorials":   ""
+   }
    
 }}
 
